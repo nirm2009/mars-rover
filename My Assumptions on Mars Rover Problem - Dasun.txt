@@ -1,0 +1,45 @@
+Dependencies
+gradle version : 5.1
+log4j version : 1.2.17
+
+Assumptions
+Solution was created with Reusability in mind and various usages of best practices.
+
+Square directly North from (x, y) is (x, y+1).
+Square directly South from (x, y) is (x, y-1).
+Square directly East from (x, y) is (x+1, y).
+Square directly West from (x, y) is (x-1, y).
+
+Lower-left coordinates are always 0, 0.
+
+Console input of value 'Q' would terminate the program.
+
+In the code, 'plateau upper right coordinates' will be refered to as 'plateau size'.
+
+No threading is used since all rovers move synchronously.
+
+Inability for a rover to move to a given new position (because of new position already being occupied)  
+is considered an error and an exception will be thrown.
+
+Findings/References
+log4j/properties file implementation code was taken from
+https://stackoverflow.com/questions/12532339/no-appenders-could-be-found-for-loggerlog4j
+
+These are the set of online help I refered to along the development of this project >
+https://www.baeldung.com/java-new-custom-exception
+https://www.google.com/search?q=numberformatexception&oq=numberformatexception&aqs=chrome..69i57j69i61j69i60.6484j0j4&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=is+numberformatexception+checked&oq=is+numberformatexception+checked&aqs=chrome..69i57j69i64.7783j0j4&sourceid=chrome&ie=UTF-8
+https://stackoverflow.com/questions/33480666/java-custom-exceptions-package-convention
+https://stackoverflow.com/questions/11871520/how-can-i-read-input-from-the-console-using-the-scanner-class-in-java
+https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#nextInt--
+https://stackoverflow.com/questions/13978754/exception-handling-with-wrong-user-input-java
+https://www.geeksforgeeks.org/enum-in-java/
+https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/StringUtils.html#isAlpha-java.lang.CharSequence-
+https://codereview.stackexchange.com/questions/42620/validating-an-input-string-against-some-enum-fields
+https://www.baeldung.com/java-enumset
+https://www.mkyong.com/java/java-properties-file-examples/
+http://www.javapractices.com/topic/TopicAction.do?Id=104
+https://stackoverflow.com/questions/196830/what-is-the-easiest-best-most-correct-way-to-iterate-through-the-characters-of-a
+https://way2java.com/java-util/java-char-comparison/
+https://stackoverflow.com/questions/16206813/how-to-terminate-scanner-when-input-is-complete
+https://stackoverflow.com/questions/12532339/no-appenders-could-be-found-for-loggerlog4j
